@@ -1,0 +1,28 @@
+
+:root { --paper:#f3ece2; --ink:#2b2520; --soft:#6d6157; --accent:#8a4a2c; --line:#d9cbb8; }
+* { box-sizing: border-box; }
+html { background: var(--paper); }
+body { margin: 0 auto; max-width: 680px; padding: 40px 20px 60px; color: var(--ink);
+       font: 17px/1.55 "Literata", Georgia, serif; }
+a { color: var(--accent); }
+.person { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
+h1, h2 { font-family: "Cormorant Garamond", Georgia, serif; font-weight: 500; color: var(--accent); line-height: 1.1; }
+h1 { font-style: italic; font-size: 40px; margin: 10px 0 6px; }
+h2 { font-size: 32px; margin: 6px 0 18px; }
+.sub, .years { font-family: "Cormorant Garamond", Georgia, serif; font-size: 19px; color: var(--soft); }
+.num { font-size: 13px; letter-spacing: .14em; text-transform: uppercase; color: var(--soft); }
+.quote { font-family: "Cormorant Garamond", Georgia, serif; font-style: italic; font-size: 24px; line-height: 1.3;
+         margin: 0 0 22px; white-space: pre-line; }
+figure { margin: 0 0 22px; }
+figure img { width: 100%; height: auto; display: block; }
+figcaption { margin-top: 6px; font: italic 15px "Cormorant Garamond", Georgia, serif; color: var(--soft); }
+.portraits { display: flex; gap: 12px; margin: 26px 0; }
+.portraits img { width: 50%; height: auto; display: block; }
+audio { width: 100%; margin: 6px 0 4px; }
+.pending { padding: 14px 16px; border: 1px dashed var(--line); color: var(--soft); font-size: 15px; }
+.dur { font-size: 13px; color: var(--soft); }
+ol { padding-left: 0; list-style: none; counter-reset: ch; }
+ol li { counter-increment: ch; padding: 9px 0; border-bottom: 1px solid var(--line); }
+ol li::before { content: counter(ch) ". "; color: var(--soft); }
+nav { display: flex; flex-wrap: wrap; gap: 12px; justify-content: space-between; margin-top: 34px; font-size: 15px; }
+footer { margin-top: 40px; font-size: 13px; color: var(--soft); }
